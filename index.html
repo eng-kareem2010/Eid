@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهنئة عيد الأضحى المبارك من كريم 🐑</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="card-container" id="capture-card">
+        <div id="welcome-step" class="step">
+            <div class="icon">🐏</div>
+            <h1>عيد أضحى مبارك</h1>
+            <p style="color: #11998e; font-weight: bold; font-size: 1.1rem; margin-bottom: 5px;">
+                يهنئكم المهندس / كريم خالد سعيد
+            </p>
+            <p>اكتب اسمك العزيز عشان تشوف تهنئتك الخاصة 👇</p>
+            <input type="text" id="userName" placeholder="اكتب اسمك هنا..." autocomplete="off">
+            <button id="generateBtn">اضغط هنا ✨</button>
+        </div>
+
+        <div id="congrats-step" class="step hidden">
+            <div class="eid-baah">🎉</div>
+            <h2 class="greeting-title">كل عام وأنت بخير!</h2>
+            <h3 id="displayName"></h3>
+            <p class="message">
+                بمناسبة حلول عيد الأضحى المبارك، أتمنى لك ولعائلتك عيداً سعيداً مليئاً بالبهجة والبركة، وتقبل الله منا ومنكم صالح الأعمال. ✨
+            </p>
+            
+            <div class="sheep-animation" style="font-size: 1.2rem; color: #2c3e50; font-weight: bold; border-top: 1px dashed #78ffd6; padding-top: 15px; margin-top: 20px;">
+                مع خالص تحياتي: <br>
+                <span style="color: #11998e; font-size: 1.4rem;">كريم خالد سعيد عبد الرشيد</span> 🤍
+            </div>
+        </div>
+    </div>
+
+    <div id="action-buttons" class="hidden" style="margin-top: 20px; text-align: center;">
+        <button id="downloadBtn" style="background: linear-gradient(45deg, #e74c3c, #e67e22); margin-left: 10px;">تحميل الكارت 📩</button>
+        <button id="backBtn" style="background: #7f8c8d;">صنع كارت جديد 🔄</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
